@@ -1,6 +1,6 @@
 export default function Header({ pageTitle }) {
   return (
-    <header className="bg-slate-200 py-4">
+    <header className="bg-sky-100 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-slate-500 text-2xl font-semibold">
           AFSC | {pageTitle}
