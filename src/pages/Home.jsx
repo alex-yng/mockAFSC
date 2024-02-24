@@ -1,5 +1,6 @@
 import Header from "../components/Header.jsx";
 import ImgCard from "../components/ImgCard.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <ImgCard />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

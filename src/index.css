@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.body-background {
+  background-image: linear-gradient(
+    70deg,
+    rgb(60, 54, 66),
+    rgb(38, 48, 73),
+    rgb(28, 32, 42)
+  );
+}
