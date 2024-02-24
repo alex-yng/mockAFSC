@@ -4,7 +4,7 @@ export default function ImgCard({
 }) {
   return (
     <>
-      <div className="size-[20rem] bg-slate-200 rounded-lg shadow-lg">
+      <div className="size-[20rem] bg-slate-200 rounded-lg shadow-lg hover:scale-110 transform transition duration-700">
         <img className="p-2 aspect-[3/2]" src={img} />
         <p className="text-slate-700 mx-2">{description}</p>
       </div>
