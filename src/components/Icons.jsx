@@ -1,8 +1,10 @@
+// Importing FontAwesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
+// Returns FontAwesome Icons nested in Anchor tags; more icons can be added easily if needed
 export default function Icons() {
   return (
     <>

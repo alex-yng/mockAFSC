@@ -1,3 +1,4 @@
+// Footer with Ownership and Copyright
 export default function Footer() {
   return (
     <footer className="bg-transparent text-white text-center py-4">

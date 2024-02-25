@@ -1,3 +1,4 @@
+// CourseCard component which houses an image, title, and description
 export default function CourseCard({
   img = "https://fakeimg.pl/700x500",
   title = "Course Title",

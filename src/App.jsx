@@ -5,11 +5,15 @@ import About from "./pages/About.jsx";
 export default function App() {
   return (
     <>
+      {/* Handles page routing */}
       <BrowserRouter>
         <Routes>
+          {/* Default page is Home.jsx page */}
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
+          {/* /about redirects to About.jsx page */}
           <Route path="/about" element={<About />} />
+          {/* Unknown URL redirects to Home */}
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
