@@ -11,18 +11,26 @@ export default function Home() {
       <Header pageTitle="Home" />
 
       {/* Hero */}
-      <section className="bg-slate-300 p-16 home-hero">
-        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center">
+      <section className="p-16 home-hero">
+        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider">
           Welcome to{" "}
           <span className="text-cyan-700">Ames Figure Skating Club</span>!
         </h1>
-        <div className="flex justify-center mt-8 lg:mt-16 gap-4">
+        <div className="flex justify-center mt-8 lg:mt-16 gap-8 lg:gap-16">
           <Icons />
         </div>
+        <h3 className="text-center mt-8 lg:mt-12 text-xl lg:text-2xl">
+          Located at the <span className="text-cyan-700">Ames Ice Arena</span>
+        </h3>
+        <h4 className="text-center text-base lg:text-lg">
+          <a href="https://maps.app.goo.gl/SatFhwJTmxKmt66E9" target="_blank">
+            1507 Gateway Hills Park Drive Ames, Iowa
+          </a>
+        </h4>
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto mt-8 mb-32 lg:max-w-[70rem] md:max-w-[45rem]">
+      <section className="container mx-auto mt-8 mb-32 lg:max-w-[78rem] md:max-w-[45rem]">
         <h1 className="text-slate-200 text-center text-4xl font-semibold tracking-wide">
           Class Catalog
         </h1>
