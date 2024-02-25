@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Header from "../components/Header.jsx";
 import CourseCard from "../components/CourseCard.jsx";
 import Footer from "../components/Footer.jsx";
@@ -5,6 +6,21 @@ import HalfCard from "../components/HalfCard.jsx";
 import Icons from "../components/Icons.jsx";
 
 export default function Home() {
+  // Keep track of all cards that need to be generated
+  const [cardInfos, setCardInfos] = useState([]);
+
+  // On page load, fetch relevant content from JSON
+  useEffect(() => {
+    fetch("./src/content.json")
+      .then((response) => response.json())
+      .then((content) => {
+        // Get every value inside content.courseImgs keys, and store it in img as an array
+        const img = Object.values(content.courseImgs);
+        // Update cardInfos to the new array
+        setCardInfos(img);
+      });
+  }, []);
+
   return (
     <>
       {/* Header */}
@@ -35,30 +51,16 @@ export default function Home() {
           Class Catalog
         </h1>
         <div className="my-8 grid row-auto grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
-          <CourseCard
-            title="Snowplow Sam (L1-4)"
-            description="Designed for children ages 3-6 with no prior skating experience to build confidence while learning the basic skills of skating."
-          />
-          <CourseCard
-            title="Basic Classes (L1-6)"
-            description="These levels introduce the fundamental moves of ice skating: forward and backward skating, stops, edges, crossovers, three turns, Mohawks and spins.  Basic 1 is for beginners and those with little experience and above the age of 6."
-          />
-          <CourseCard
-            title="Freestyle Classes (1-6)"
-            description="Introduction to more advanced figure skating skills. Skater must complete Pre-Freeskate to register."
-          />
-          <CourseCard
-            title="​Adult Classes (L1-6)"
-            description="Teen through senior citizens can enjoy learning beginner through advanced skills."
-          />
-          <CourseCard
-            title="Hockey (L1-4)"
-            description="Fundamentals of hockey to help maneuver faster and be more agile on the ice. All elements will be taught without sticks."
-          />
-          <CourseCard
-            title="Adult Classes (L1-6)"
-            description="Teen through senior citizens can enjoy learning beginner through advanced skills."
-          />
+          {/* Map through cardInfo array to display each Card from JSON */}
+          {cardInfos.map((cardInfo) => {
+            return (
+              <CourseCard
+                img={cardInfo.url}
+                title={cardInfo.title}
+                description={cardInfo.description}
+              />
+            );
+          })}
         </div>
       </section>
 

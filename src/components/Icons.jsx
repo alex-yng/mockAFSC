@@ -23,7 +23,7 @@ export default function Icons() {
       >
         <FontAwesomeIcon
           icon={faTwitter}
-          className="hover:text-blue-400 transition hover:-translate-y-2 duration-300"
+          className="hover:text-sky-400 transition hover:-translate-y-2 duration-300"
         />
       </a>
       <a
