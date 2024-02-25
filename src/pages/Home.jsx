@@ -44,7 +44,7 @@ export default function Home() {
             description="These levels introduce the fundamental moves of ice skating: forward and backward skating, stops, edges, crossovers, three turns, Mohawks and spins.  Basic 1 is for beginners and those with little experience and above the age of 6."
           />
           <CourseCard
-            title="Freestyle Classes - Pre-Free Skate – Freeskate 6"
+            title="Freestyle Classes (1-6)"
             description="Introduction to more advanced figure skating skills. Skater must complete Pre-Freeskate to register."
           />
           <CourseCard
