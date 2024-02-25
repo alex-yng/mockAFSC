@@ -3,10 +3,6 @@
     {
       "source": "/(.*)",
       "destination": "/"
-    },
-    {
-      "source": "/test",
-      "destination": "/src/content.json"
     }
   ]
 }

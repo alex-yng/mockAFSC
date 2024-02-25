@@ -12,7 +12,11 @@ export default function Home() {
 
   // On page load, fetch relevant content from JSON
   useEffect(() => {
-    fetch("./src/content.json")
+    // content.json in src is json fetched here
+    // hosted through jsonSilo so it works on vercel production build.
+    fetch(
+      "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+    )
       .then((response) => response.json())
       .then((content) => {
         // Get every value inside content.courseImgs keys, and store it in img as an array
