@@ -12,10 +12,11 @@ export default function Home() {
 
   // On page load, fetch relevant content from JSON
   useEffect(() => {
-    // content.json in src is json fetched here
-    // hosted through jsonSilo so it works on vercel production build.
+    // content.json hosted through jsonSilo so it works on vercel production build.
+    // replace URL with "/src/content.json" to test locally without public API.
     fetch(
       "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      // "/src/content.json"
     )
       .then((response) => response.json())
       .then((content) => {
@@ -43,7 +44,7 @@ export default function Home() {
         <h3 className="text-center mt-8 lg:mt-12 text-xl lg:text-2xl">
           Located at the Ames Ice Arena
         </h3>
-        <h4 className="text-center text-base lg:text-lg text-cyan-600">
+        <h4 className="text-center text-base lg:text-lg text-cyan-600 hover:text-cyan-900 transition-colors duration-300">
           <a href="https://maps.app.goo.gl/SatFhwJTmxKmt66E9" target="_blank">
             1507 Gateway Hills Park Drive Ames, Iowa
           </a>

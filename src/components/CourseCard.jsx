@@ -12,7 +12,7 @@ export default function CourseCard({
           <h2 className="text-xl lg:text-3xl font-medium lg:tracking-wide mb-2">
             {title}
           </h2>
-          <p className="text-base lg:text-xl">{description}</p>
+          <p className="text-base md:text-base lg:text-xl">{description}</p>
         </div>
       </div>
     </>
