@@ -5,6 +5,7 @@ import Footer from "../components/Footer.jsx";
 import HalfCard from "../components/HalfCard.jsx";
 import Icons from "../components/Icons.jsx";
 
+// Home Page
 export default function Home() {
   // Keep track of all cards that need to be generated
   const [cardInfos, setCardInfos] = useState([]);
