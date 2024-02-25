@@ -2,6 +2,8 @@ Unofficial, mock website for the Ames Figure Skating Club created for ISU CS 319
 
 To Kaylee,
 
+sorry for coercing you into doing our midterm in React and Tailwind; this was lowkey selfish and I do genuinely feel bad. To ease your potential struggles as much as possible, I am writing out a short quick list of things that may not be obvious at first.
+
 If you are reading this, HELLO. If you are feeling at all overwhelmed, that is SO UNDERSTANDABLE DO NOT FRET PLEASE. I didn't know ANY react a week ago and now I can do all of this random stuff. React can be really complex if you are doing really complex things; DO NOT WORRY!!! we are just making a few webpages, which in React, IS ALMOST EASIER!!!! Now, the general high-level approach React uses does need to be learned (Components and whatnot) but you can definitely get that down quickly because you are smart. BUT AFTER THAT?!!?!? You can start really simply like I did. Anyway, I will leave a few tips here for you in case you don't know where to start. AND DO NOT FORGET IF AT ANY POINT YOU HAVE A QUESTION PLEASE FEEL FREE TO ASK IM NO PROFESSIONAL BUT I AM A BIG NERD SO I KNOW SOME STUFF.
 
 STEP 0: VERY IMPORTANT
