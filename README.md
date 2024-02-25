@@ -21,3 +21,5 @@ STEP 0: VERY IMPORTANT
     b. all you need to do is add the property    you want, for example, "bg-red-500" which is equivalent to background-color: red; INSIDE the elements classes. In React, it should look like         className="bg-red-500"    .
     c. IF YOU DON'T FEEL LIKE WORKING WITH TAILWIND, TOTALLY UNDERSTANDABLE. I CAN ALWAYS DO IT ORRRRR YOU CAN MAKE .CSS FILES AND STYLE AS NORMAL.
         i. to make a css file and use it to style, make a new folder in the src folder called "styles". put your CSS in there (name it whatever, ideally related to the page you're working on             though). THEN, ON THE .jsx FILE YOU ARE WORKING ON, IMPORT IT AT THE TOP!! should look like     import './whateverName.css'   THEN YOU'RE GOLDEN
+
+THANK YOU FOR READING, I HOPE THIS HELPS.
