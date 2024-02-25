@@ -20,9 +20,9 @@ export default function Home() {
           <Icons />
         </div>
         <h3 className="text-center mt-8 lg:mt-12 text-xl lg:text-2xl">
-          Located at the <span className="text-cyan-700">Ames Ice Arena</span>
+          Located at the Ames Ice Arena
         </h3>
-        <h4 className="text-center text-base lg:text-lg">
+        <h4 className="text-center text-base lg:text-lg text-cyan-600">
           <a href="https://maps.app.goo.gl/SatFhwJTmxKmt66E9" target="_blank">
             1507 Gateway Hills Park Drive Ames, Iowa
           </a>
