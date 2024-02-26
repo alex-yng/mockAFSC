@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="p-16 home-hero">
-        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider">
+        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider xl:px-48">
           Welcome to{" "}
           <span className="text-cyan-700">Ames Figure Skating Club</span>!
         </h1>
