@@ -14,6 +14,7 @@ export default function Home() {
   useEffect(() => {
     // content.json hosted through jsonSilo so it works on vercel production build.
     // replace URL with "/src/content.json" to test locally without public API.
+    // can also open the link and verify the JSON shape
     fetch(
       "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
       // "/src/content.json"
@@ -52,11 +53,11 @@ export default function Home() {
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto mt-8 mb-32 xl:max-w-[74rem] lg:max-w-[60rem] md:max-w-[45rem]">
+      <section className="container mx-auto mt-8 mb-32 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem]">
         <h1 className="text-slate-200 text-center text-4xl font-semibold tracking-wide">
           Class Catalog
         </h1>
-        <div className="my-8 grid row-auto grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div className="my-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 place-items-center">
           {/* Map through cardInfo array to display each Card from JSON */}
           {cardInfos.map((cardInfo) => {
             return (
