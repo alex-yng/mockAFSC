@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="p-16 home-hero">
-        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider xl:px-48">
+        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider xl:px-48npm">
           Welcome to{" "}
           <span className="text-cyan-700">Ames Figure Skating Club</span>!
         </h1>
@@ -57,7 +57,7 @@ export default function Home() {
         <h1 className="text-slate-200 text-center text-4xl font-semibold tracking-wide">
           Class Catalog
         </h1>
-        <div className="my-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 place-items-center">
+        <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
           {/* Map through cardInfo array to display each Card from JSON */}
           {cardInfos.map((cardInfo) => {
             return (
@@ -72,13 +72,20 @@ export default function Home() {
       </section>
 
       {/* Disclaimers */}
-      <section className="container mx-auto my-8 mb-32 max-w-[70rem]">
-        <h1 className="text-slate-200 font-semibold tracking-wide text-4xl text-center">
-          Disclaimer
-        </h1>
-        <div className="grid grid-rows-1 grid-cols-2 place-items-center my-8">
-          <HalfCard height={"h-96"} />
-          <HalfCard height={"h-96"} />
+      <section className="my-8 mb-32 bg-white p-8">
+        <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
+          <div>
+            <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
+              Register Now!
+            </h1>
+            <HalfCard height={"h-96"} />
+          </div>
+          <div>
+            <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
+              Open:
+            </h1>
+            <HalfCard height={"h-96"} />
+          </div>
         </div>
       </section>
 

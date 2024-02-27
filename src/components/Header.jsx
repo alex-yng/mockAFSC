@@ -1,4 +1,6 @@
 // Header / Navbar used for each page
+import NavLink from "./NavLink.jsx";
+
 export default function Header() {
   return (
     <header className="py-4 header-background">
@@ -12,18 +14,9 @@ export default function Header() {
         </div>
         {/* Navigation; Support for several links if needed */}
         <nav className="space-x-4">
-          <a
-            href="/home"
-            className="text-slate-500 hover:text-cyan-700 hover:text-lg lg:hover:text-xl transition-[font-size] duration-300"
-          >
-            Home
-          </a>
-          <a
-            href="/about"
-            className="text-slate-500 hover:text-cyan-700 hover:text-lg lg:hover:text-xl transition-[font-size] duration-300"
-          >
-            About
-          </a>
+          <NavLink path="/home" text="Home" />
+          <NavLink path="/about" text="About" />
+          <NavLink path="/creators" text="Creators" />
         </nav>
       </div>
     </header>
