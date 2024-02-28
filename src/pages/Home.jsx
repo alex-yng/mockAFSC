@@ -9,6 +9,7 @@ import Icons from "../components/Icons.jsx";
 export default function Home() {
   // Keep track of all cards that need to be generated
   const [cardInfos, setCardInfos] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // On page load, fetch relevant content from JSON
   useEffect(() => {
@@ -25,7 +26,8 @@ export default function Home() {
         const img = Object.values(content.courseImgs);
         // Update cardInfos to the new array
         setCardInfos(img);
-      });
+      })
+      .then(setIsLoaded(true));
   }, []);
 
   return (
@@ -60,28 +62,30 @@ export default function Home() {
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
-        <div className="flex flex-col gap-4 lg:gap-8">
-          <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
-            Class Catalog
-          </h1>
-          <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
-            {/* Map through cardInfo array to display each Card from JSON */}
-            {cardInfos.map((cardInfo) => {
-              return (
-                <CourseCard
-                  img={cardInfo.url}
-                  title={cardInfo.title}
-                  description={cardInfo.description}
-                />
-              );
-            })}
+      <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem]">
+        <div className={isLoaded && `animate-fadeIn`}>
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
+              Class Catalog
+            </h1>
+            <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
+              {/* Map through cardInfo array to display each Card from JSON */}
+              {cardInfos.map((cardInfo) => {
+                return (
+                  <CourseCard
+                    img={cardInfo.url}
+                    title={cardInfo.title}
+                    description={cardInfo.description}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Disclaimers */}
-      <section className="my-8 mb-32 bg-white p-8 animate-fadeIn">
+      <section className="my-8 mb-32 bg-white p-8">
         <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
           <div>
             <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
