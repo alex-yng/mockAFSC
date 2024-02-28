@@ -8,15 +8,6 @@ html {
   padding: 0;
 }
 
-.body-background {
-  background-image: linear-gradient(
-    70deg,
-    rgb(60, 54, 66),
-    rgb(76, 91, 126),
-    rgb(28, 32, 42)
-  );
-}
-
 .header-background {
   background-image: radial-gradient(
       circle at 40% 91%,

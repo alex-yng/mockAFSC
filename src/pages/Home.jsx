@@ -34,40 +34,44 @@ export default function Home() {
       <Header pageTitle="Home" />
 
       {/* Hero */}
-      <section className="p-16 home-hero">
-        <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider xl:px-48npm">
-          Welcome to{" "}
-          <span className="text-cyan-700">Ames Figure Skating Club</span>!
-        </h1>
-        <div className="flex justify-center mt-8 lg:mt-16 gap-8 lg:gap-16">
-          <Icons />
+      <section className="p-16 home-hero md:h-[90vh] grid place-items-center">
+        <div>
+          <h1 className="text-slate-700 xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold text-wrap text-center tracking-wider xl:px-48npm">
+            Welcome to{" "}
+            <span className="text-cyan-700">Ames Figure Skating Club</span>!
+          </h1>
+          <div className="flex justify-center mt-8 lg:mt-16 gap-8 lg:gap-16">
+            <Icons />
+          </div>
+          <h3 className="text-center mt-8 lg:mt-12 text-xl lg:text-2xl">
+            Located at the Ames Ice Arena
+          </h3>
+          <h4 className="text-center text-base lg:text-lg text-cyan-600 hover:text-cyan-900 transition-colors duration-300">
+            <a href="https://maps.app.goo.gl/SatFhwJTmxKmt66E9" target="_blank">
+              1507 Gateway Hills Park Drive Ames, Iowa
+            </a>
+          </h4>
         </div>
-        <h3 className="text-center mt-8 lg:mt-12 text-xl lg:text-2xl">
-          Located at the Ames Ice Arena
-        </h3>
-        <h4 className="text-center text-base lg:text-lg text-cyan-600 hover:text-cyan-900 transition-colors duration-300">
-          <a href="https://maps.app.goo.gl/SatFhwJTmxKmt66E9" target="_blank">
-            1507 Gateway Hills Park Drive Ames, Iowa
-          </a>
-        </h4>
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto mt-8 mb-32 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem]">
-        <h1 className="text-slate-200 text-center text-4xl font-semibold tracking-wide">
-          Class Catalog
-        </h1>
-        <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
-          {/* Map through cardInfo array to display each Card from JSON */}
-          {cardInfos.map((cardInfo) => {
-            return (
-              <CourseCard
-                img={cardInfo.url}
-                title={cardInfo.title}
-                description={cardInfo.description}
-              />
-            );
-          })}
+      <section className="container mx-auto my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem]">
+        <div className="flex flex-col gap-4 lg:gap-8">
+          <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
+            Class Catalog
+          </h1>
+          <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
+            {/* Map through cardInfo array to display each Card from JSON */}
+            {cardInfos.map((cardInfo) => {
+              return (
+                <CourseCard
+                  img={cardInfo.url}
+                  title={cardInfo.title}
+                  description={cardInfo.description}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
 
