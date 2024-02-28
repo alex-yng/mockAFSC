@@ -27,7 +27,7 @@ export default function Home() {
         // Update cardInfos to the new array
         setCardInfos(img);
       })
-      .then(setIsLoaded(true));
+      .then(() => setIsLoaded(true));
   }, []);
 
   return (
