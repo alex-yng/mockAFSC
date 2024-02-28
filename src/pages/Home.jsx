@@ -27,7 +27,9 @@ export default function Home() {
 
         // Iterate through the individual imgs of classImgs and add to new array
         let newItems = [];
-        keys.map((key) => newItems.push(content.classImgs[key]));
+        for (let key of keys) {
+          newItems.push(content.classImgs[key]);
+        }
 
         // Avoid rerendering by adding all new images at once
         setCardInfos(newItems);
