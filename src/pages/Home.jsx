@@ -17,22 +17,24 @@ export default function Home() {
     // replace URL with "/src/content.json" to test locally without public API.
     // can also open the link and verify the JSON shape
     fetch(
-      // "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      "/src/content.json"
+      "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      // "/src/content.json"
     )
       .then((response) => response.json())
       .then((content) => {
-        // Get every value inside content.courseImgs keys, and store it in img as an array
-        // const img = Object.values(content.classImgs);
-        // Update cardInfos to the new array
-        // setCardInfos(img);
+        // Get keys of content.classImgs into array
         let keys = Object.keys(content.classImgs);
-        for (let key of keys) {
-          setCardInfos([...cardInfos, content.classImgs[key]]);
-        }
-        console.log(cardInfos);
+
+        // Iterate through the individual imgs of classImgs and add to new array
+        let newItems = [];
+        keys.map((key) => newItems.push(content.classImgs[key]));
+
+        // Avoid rerendering by adding all new images at once
+        setCardInfos(newItems);
       })
-      .then(() => setIsLoaded(true));
+      .then(() => {
+        setIsLoaded(true);
+      });
   }, []);
 
   return (
