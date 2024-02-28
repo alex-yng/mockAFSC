@@ -86,16 +86,34 @@ export default function Home() {
           </section>
 
           {/* Disclaimers */}
+          {/* create disclaimer box, ABOVE "open" and "register now" boxes, with these disclaimers:
+          Deadline to Register: Day before session starts
+
+          Additional Information: If registrations are low, class levels may be combined. No makeup lessons. Dates subject to change due to ice availability.
+
+          There is a 5% processing fee if you pay with your credit card.  */}
           <section className="my-8 mb-32 bg-white p-8">
             <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
               <div>
                 <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
                   Register Now!
                 </h1>
+                {/* create different register buttons for each class. they will all open to the register page, which will have user fill out 
+                information. we can include the register page or not idc
+                this keeps the registering less confusing and more organized for the AFSC to see numbers on who is
+                signing up for what */}
                 <HalfCard height={"h-96"} />
               </div>
               <div>
                 <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
+                  {/* there is currently only one session running, so that is the only one we will include.  
+                  it is called "session 4", it is 6 weeks long, once a week, on either wednesdays, fridays, or saturdays
+                  wednesday is from 6:30-7pm; friday is from 5:00-5:30pm; saturday is 9:00-9:30am
+                  Wednesday's:  February 28th; March 6th, 20th, 27th; April 3rd & 10th
+
+                  Friday's: March 1st, 8th, 22nd, 29th; April 5th & 12th
+
+                  Saturday's: March 2nd, 9th, 23rd, 30th; April 6th & 13th*/}
                   Open:
                 </h1>
                 <HalfCard height={"h-96"} />
