@@ -62,48 +62,51 @@ export default function Home() {
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem]">
-        <div className={isLoaded && `animate-fadeIn`}>
-          <div className="flex flex-col gap-4 lg:gap-8">
-            <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
-              Class Catalog
-            </h1>
-            <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
-              {/* Map through cardInfo array to display each Card from JSON */}
-              {cardInfos.map((cardInfo) => {
-                return (
-                  <CourseCard
-                    img={cardInfo.url}
-                    title={cardInfo.title}
-                    description={cardInfo.description}
-                  />
-                );
-              })}
+      {/* Check if json is fetched yet, then load the rest of the page */}
+      {isLoaded && (
+        <>
+          <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
+            <div className="flex flex-col gap-4 lg:gap-8">
+              <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
+                Class Catalog
+              </h1>
+              <div className="m-8 grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 place-items-center">
+                {/* Map through cardInfo array to display each Card from JSON */}
+                {cardInfos.map((cardInfo) => {
+                  return (
+                    <CourseCard
+                      img={cardInfo.url}
+                      title={cardInfo.title}
+                      description={cardInfo.description}
+                    />
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Disclaimers */}
-      <section className="my-8 mb-32 bg-white p-8">
-        <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
-          <div>
-            <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
-              Register Now!
-            </h1>
-            <HalfCard height={"h-96"} />
-          </div>
-          <div>
-            <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
-              Open:
-            </h1>
-            <HalfCard height={"h-96"} />
-          </div>
-        </div>
-      </section>
+          {/* Disclaimers */}
+          <section className="my-8 mb-32 bg-white p-8">
+            <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
+              <div>
+                <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
+                  Register Now!
+                </h1>
+                <HalfCard height={"h-96"} />
+              </div>
+              <div>
+                <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
+                  Open:
+                </h1>
+                <HalfCard height={"h-96"} />
+              </div>
+            </div>
+          </section>
 
-      {/* Footer */}
-      <Footer />
+          {/* Footer */}
+          <Footer />
+        </>
+      )}
     </>
   );
 }
