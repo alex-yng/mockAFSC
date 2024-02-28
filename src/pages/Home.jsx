@@ -41,13 +41,13 @@ export default function Home() {
             <span className="text-cyan-700">Ames Figure Skating Club</span>!
           </h1>
           <div className="animate-[slideUp_1.4s]">
-            <div className="flex justify-center mt-8 lg:mt-16 gap-8 lg:gap-16">
+            <div className="flex justify-center mt-2 md:mt-8 lg:mt-16 gap-4 md:gap-8 lg:gap-16">
               <Icons />
             </div>
-            <h3 className="text-center mt-8 lg:mt-12 text-xl lg:text-2xl">
+            <h3 className="text-center mt-2 md:mt-8 lg:mt-12 text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
               Located at the Ames Ice Arena
             </h3>
-            <h4 className="text-center text-base lg:text-lg text-cyan-600 hover:text-cyan-900 transition-colors duration-300">
+            <h4 className="text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-cyan-600 hover:text-cyan-900 transition-colors duration-300">
               <a
                 href="https://maps.app.goo.gl/SatFhwJTmxKmt66E9"
                 target="_blank"
