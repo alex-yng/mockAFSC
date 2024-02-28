@@ -17,15 +17,20 @@ export default function Home() {
     // replace URL with "/src/content.json" to test locally without public API.
     // can also open the link and verify the JSON shape
     fetch(
-      "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      // "/src/content.json"
+      // "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      "/src/content.json"
     )
       .then((response) => response.json())
       .then((content) => {
         // Get every value inside content.courseImgs keys, and store it in img as an array
-        const img = Object.values(content.courseImgs);
+        // const img = Object.values(content.classImgs);
         // Update cardInfos to the new array
-        setCardInfos(img);
+        // setCardInfos(img);
+        let keys = Object.keys(content.classImgs);
+        for (let key of keys) {
+          setCardInfos([...cardInfos, content.classImgs[key]]);
+        }
+        console.log(cardInfos);
       })
       .then(() => setIsLoaded(true));
   }, []);
@@ -61,10 +66,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Course Catalog */}
       {/* Check if json is fetched yet, then load the rest of the page */}
       {isLoaded && (
         <>
+          {/* Course Catalog */}
           <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
             <div className="flex flex-col gap-4 lg:gap-8">
               <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">

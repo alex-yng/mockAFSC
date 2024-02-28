@@ -3,7 +3,7 @@ import NavLink from "./NavLink.jsx";
 
 export default function Header() {
   return (
-    <header className="py-4 header-background h-[10vh]">
+    <header className="py-4 bg-white h-[10vh]">
       <div className="container mx-auto flex sm:justify-between justify-around items-center">
         {/* Div for Logo and Site Name */}
         <div className="flex items-center gap-4">
