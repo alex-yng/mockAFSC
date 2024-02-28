@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <img className="size-16" src="/afscLogo.jpg" />
           <h1 className="text-slate-500 text-base sm:text-lg lg:text-2xl font-semibold tracking-wide">
-            AFSC
+            AFSC (NOT AN OFFICIAL AFSC PAGE)
           </h1>
         </div>
         {/* Navigation; Support for several links if needed */}
