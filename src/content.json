@@ -1,32 +1,32 @@
 {
   "courseImgs": {
     "img1": {
-      "url": "https://fakeimg.pl/700x500",
+      "url": "/snowplowsam.jpg",
       "title": "Snowplow Sam (L1-4)",
       "description": "Designed for children ages 3-6 with no prior skating experience to build confidence while learning the basic skills of skating."
     },
     "img2": {
-      "url": "https://fakeimg.pl/700x500",
+      "url": "/basicclasses.jpg",
       "title": "Basic Classes (L1-6)",
       "description": "These levels introduce the fundamental moves of ice skating: forward and backward skating, stops, edges, crossovers, three turns, Mohawks and spins.  Basic 1 is for beginners and those with little experience and above the age of 6."
     },
     "img3": {
-      "url": "https://fakeimg.pl/700x500",
+      "url": "/freestyle.jpg",
       "title": "Freestyle Classes (L1-6)",
       "description": "Introduction to more advanced figure skating skills. Skater must complete Pre-Freeskate to register."
     },
     "img4": {
-      "url": "https://fakeimg.pl/700x500",
+      "url": "/adult.jpg",
       "title": "Adult Classes (L1-6)",
       "description": "Teen through senior citizens can enjoy learning beginner through advanced skills."
     },
     "img5": {
-      "url": "https://fakeimg.pl/700x500",
+      "url": "/hockey.jpg",
       "title": "Hockey (L1-4)",
       "description": "Fundamentals of hockey to help maneuver faster and be more agile on the ice. All elements will be taught without sticks."
     },
     "img6": {
-      "url": "https://fakeimg.pl/700x500",
+      "url": "/totskate.jpg",
       "title": "Parent/Tot (3-5 years)",
       "description": "This class is designed to acclimate preschool age children to instruction and a fun skating environment with help from mom or dad! Parents should have some skating ability. Instruction will be focused on the child. Helmets are recommended."
     }
