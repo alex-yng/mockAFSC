@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
+      <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
         <div className="flex flex-col gap-4 lg:gap-8">
           <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
             Class Catalog
