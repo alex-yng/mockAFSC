@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Course Catalog */}
-      <section className="container mx-auto my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem]">
+      <section className="container mx-auto my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
         <div className="flex flex-col gap-4 lg:gap-8">
           <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
             Class Catalog
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* Disclaimers */}
-      <section className="my-8 mb-32 bg-white p-8">
+      <section className="my-8 mb-32 bg-white p-8 animate-fadeIn">
         <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
           <div>
             <h1 className="my-2 text-slate-700 font-semibold tracking-wide text-4xl">
