@@ -4,7 +4,8 @@ export default function HalfCard({ height }) {
 
   return (
     <>
-      <div className={`${defaultStyles} ${height}`}></div>
+      <div className={`${defaultStyles} ${height}`}></div> 
     </>
+    
   );
 }
