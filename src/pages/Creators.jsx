@@ -1,6 +1,7 @@
-import { disableScroll } from "../App.jsx";
 import { useState } from "react";
+import { disableScroll } from "../App.jsx";
 import Header from "../components/Header.jsx";
+import NavLink from "../components/NavLink.jsx";
 
 export default function Creators() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
