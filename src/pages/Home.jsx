@@ -22,12 +22,21 @@ export default function Home() {
     )
       .then((response) => response.json())
       .then((content) => {
-        // Get every value inside content.courseImgs keys, and store it in img as an array
-        const img = Object.values(content.courseImgs);
-        // Update cardInfos to the new array
-        setCardInfos(img);
+        // Get keys of content.classImgs into array
+        let keys = Object.keys(content.classImgs);
+
+        // Iterate through the individual imgs of classImgs and add to new array
+        let newItems = [];
+        for (let key of keys) {
+          newItems.push(content.classImgs[key]);
+        }
+
+        // Avoid rerendering by adding all new images at once
+        setCardInfos(newItems);
       })
-      .then(() => setIsLoaded(true));
+      .then(() => {
+        setIsLoaded(true);
+      });
   }, []);
 
   return (
@@ -61,10 +70,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Course Catalog */}
       {/* Check if json is fetched yet, then load the rest of the page */}
       {isLoaded && (
         <>
+          {/* Course Catalog */}
           <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
             <div className="flex flex-col gap-4 lg:gap-8">
               <h1 className="text-slate-200 text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-wide">
