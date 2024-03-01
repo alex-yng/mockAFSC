@@ -7,7 +7,9 @@ export default function Header() {
       <div className="container mx-auto flex sm:justify-between justify-around items-center">
         {/* Div for Logo and Site Name */}
         <div className="flex items-center gap-4">
-          <img className="size-16" src="/afscLogo.jpg" />
+          <a href="/home">
+            <img className="size-16" src="/afscLogo.jpg" />
+          </a>
           <h1 className="text-slate-500 text-base sm:text-lg lg:text-2xl font-semibold tracking-wide">
             AFSC (NOT AN OFFICIAL AFSC PAGE)
           </h1>
