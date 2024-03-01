@@ -57,7 +57,7 @@ export default function Creators() {
         </div>
         <div className="grid place-items-center animate-[slideLeft_1.3s] p-8 sm:p-12 md:p-16 lg:p-0">
           <img
-            className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none"
+            className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none hover:scale-110 opacity-80 hover:opacity-100 lg:hover:scale-100 transition-[transform,opacity] duration-500"
             src="/alexPFP.jpg"
           />
         </div>
@@ -80,7 +80,7 @@ export default function Creators() {
         </div>
         <div className="grid place-items-center animate-[slideLeft_1.7s] lg:animate-[slideRight_1.5s] p-8 sm:p-12 md:p-16 lg:p-0">
           <img
-            className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none"
+            className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none hover:scale-110 opacity-80 hover:opacity-100 lg:hover:scale-100 transition-[transform,opacity] duration-500"
             src="https://fakeimg.pl/1200x1200"
           />
         </div>
