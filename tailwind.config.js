@@ -31,12 +31,30 @@ export default {
             transform: "translateY(0)",
           },
         },
+        slideRight: {
+          "0%": {
+            transform: "translateX(-200px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
+        slideLeft: {
+          "0%": {
+            transform: "translateX(200px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         fadeIn: "fadeIn 2s",
         fadeOut: "fadeOut 2s",
         slideDown: "slideDown 1s",
         slideUp: "slideUp 1s",
+        slideRight: "slideRight 1s",
+        slideLeft: "slideLeft 1s",
       },
     },
   },
