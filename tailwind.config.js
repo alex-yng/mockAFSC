@@ -47,6 +47,24 @@ export default {
             transform: "translateY(0)",
           },
         },
+        expandDownward: {
+          "0%": {
+            scale: "1 0",
+          },
+          "100%": {
+            scale: "1 1",
+          },
+        },
+        expandUpward: {
+          "0%": {
+            scale: "1 1",
+            height: "100vh",
+          },
+          "100%": {
+            scale: "1 0",
+            height: "0",
+          },
+        },
       },
       animation: {
         fadeIn: "fadeIn 2s",
@@ -55,6 +73,8 @@ export default {
         slideUp: "slideUp 1s",
         slideRight: "slideRight 1s",
         slideLeft: "slideLeft 1s",
+        expandDownward: "expandDownward 1s",
+        expandUpward: "expandUpward 1s ease-in",
       },
     },
   },

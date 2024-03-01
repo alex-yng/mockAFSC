@@ -1,11 +1,40 @@
-import HalfCard from "../components/HalfCard.jsx";
+import { disableScroll } from "../App.jsx";
+import { useState } from "react";
 import Header from "../components/Header.jsx";
 
 export default function Creators() {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [opacity, setOpacity] = useState("opacity-0");
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen((prev) => !prev);
+    disableScroll();
+  };
+
+  // disable dropdown menu
+  setTimeout(() => {
+    setOpacity("opacity-100");
+  }, 1000);
+
   return (
     <>
       {/* Header */}
-      <Header />
+      <Header mobileNavOpen={mobileNavOpen} toggleMobileNav={toggleMobileNav} />
+      <div
+        className={`bg-white w-screen absolute z-10 origin-top grid place-items-center ${
+          mobileNavOpen
+            ? "h-[90vh] animate-expandDownward"
+            : "h-0 animate-expandUpward"
+        } ${opacity}`}
+      >
+        {mobileNavOpen && (
+          <nav className={`flex flex-col gap-8`}>
+            <NavLink path="/home" text="Home" />
+            <NavLink path="/about" text="About" />
+            <NavLink path="/creators" text="Creators" />
+          </nav>
+        )}
+      </div>
 
       {/* Content */}
       <main className="flex flex-col bg-slate-700 lg:grid lg:grid-cols-2">
