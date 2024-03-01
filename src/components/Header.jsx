@@ -11,7 +11,7 @@ export default function Header({ mobileNavOpen, toggleMobileNav }) {
             <img className="size-16" src="/afscLogo.jpg" />
           </a>
           <h1 className="text-slate-500 text-base sm:text-lg lg:text-2xl font-semibold tracking-wide">
-            AFSC (NOT AN OFFICIAL AFSC PAGE)
+            AFSC (unofficial page)
           </h1>
         </div>
 
