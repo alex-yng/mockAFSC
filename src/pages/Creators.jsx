@@ -27,13 +27,13 @@ export default function Creators() {
         </div>
         <div className="grid place-items-center animate-[slideLeft_1.3s] p-8 sm:p-12 md:p-16 lg:p-0">
           <img
-            className="size-64 sm:size-80 md:size-96 lg:size-full"
+            className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none"
             src="/alexPFP.jpg"
           />
         </div>
 
         {/* Person 2 */}
-        <div className="lg:hidden bg-slate-700 animate-slideRight">
+        <div className="lg:hidden bg-slate-700 animate-[slideRight_1.5s]">
           <div className="flex lg:flex-col justify-center items-center lg:items-start p-8 lg:p-16 gap-8 xl:gap-16">
             <h1 className="text-slate-200 text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-medium tracking-wide">
               Kaylee
@@ -48,13 +48,13 @@ export default function Creators() {
             </p>
           </div>
         </div>
-        <div className="grid place-items-center animate-[slideRight_1.6s] p-8 sm:p-12 md:p-16 lg:p-0">
+        <div className="grid place-items-center animate-[slideLeft_1.7s] lg:animate-[slideRight_1.5s] p-8 sm:p-12 md:p-16 lg:p-0">
           <img
-            className="size-64 sm:size-80 md:size-96 lg:size-full"
+            className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none"
             src="https://fakeimg.pl/1200x1200"
           />
         </div>
-        <div className="hidden bg-slate-700 animate-[slideLeft_1.9s] lg:grid place-items-center">
+        <div className="hidden bg-slate-700 animate-[slideLeft_1.7s] lg:grid place-items-center">
           <div className="flex lg:flex-col justify-center items-center lg:items-start p-8 lg:p-16 gap-8 xl:gap-16">
             <h1 className="text-slate-200 text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-medium tracking-wide">
               Kaylee

@@ -126,18 +126,42 @@ export default function Home() {
                   Open:
                 </h1>
                 <div className="min-w-96 md:min-w-[40rem] lg:min-w-[30rem] xl:min-w-[38rem] mb-8 lg:mb-16 bg-slate-200 rounded-lg shadow-lg h-96">
-                  <h1 className="font-extrabold font-serif text-center text-4xl "><bold>Session 4</bold></h1>
-                  <h2 className=" font-semibold font-sans text-center text-xl">6 weeks long, Wednesdays, Fridays, or Saturdays</h2><br></br>
-                  <h3 className=" font-normal font-sans text-left text-lg indent-3">Wednesday's from 6:30-7:00pm: </h3>           
-                  <h3 className="indent-3">Feburary 28th, March 6th, March 20th, March 27th, April 3rd, April 10th</h3><br></br>
-                  <h4 className=" font-normal font-sans text-left text-lg indent-3">Friday's from 5:00-5:30pm: </h4>           
-                  <h4 className="indent-3">March 1st, March 8th, March 22nd, March 29th, April 5th, April 12th</h4><br></br>
-                  <h5 className=" font-normal font-sans text-left text-lg indent-3">Saturday's from 9:00-9:30am: </h5>           
-                  <h5 className="indent-3">March 2nd, March 9th, March 23rd, March 30th, April 6th, April 13th</h5><br></br>
+                  <h1 className="font-extrabold font-serif text-center text-4xl">
+                    Session 4
+                  </h1>
+                  <h2 className=" font-semibold font-sans text-center text-xl">
+                    6 weeks long, Wednesdays, Fridays, or Saturdays
+                  </h2>
                   <br></br>
-                  <h6 className="font-sans indent-3 font-semibold text-red-400">*More Sessions Will Open Up Closer to Start Date*</h6>
+                  <h3 className=" font-normal font-sans text-left text-lg indent-3">
+                    Wednesday's from 6:30-7:00pm:{" "}
+                  </h3>
+                  <h3 className="indent-3">
+                    Feburary 28th, March 6th, March 20th, March 27th, April 3rd,
+                    April 10th
+                  </h3>
+                  <br></br>
+                  <h4 className=" font-normal font-sans text-left text-lg indent-3">
+                    Friday's from 5:00-5:30pm:{" "}
+                  </h4>
+                  <h4 className="indent-3">
+                    March 1st, March 8th, March 22nd, March 29th, April 5th,
+                    April 12th
+                  </h4>
+                  <br></br>
+                  <h5 className=" font-normal font-sans text-left text-lg indent-3">
+                    Saturday's from 9:00-9:30am:{" "}
+                  </h5>
+                  <h5 className="indent-3">
+                    March 2nd, March 9th, March 23rd, March 30th, April 6th,
+                    April 13th
+                  </h5>
+                  <br></br>
+                  <br></br>
+                  <h6 className="font-sans indent-3 font-semibold text-red-400">
+                    *More Sessions Will Open Up Closer to Start Date*
+                  </h6>
                 </div>
-
               </div>
             </div>
           </section>

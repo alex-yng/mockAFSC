@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Creators from "./pages/Creators.jsx";
