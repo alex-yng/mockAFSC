@@ -33,7 +33,7 @@ export default {
         },
         slideRight: {
           "0%": {
-            transform: "translateX(-200px)",
+            transform: "translateX(-500px)",
           },
           "100%": {
             transform: "translateY(0)",
@@ -41,7 +41,7 @@ export default {
         },
         slideLeft: {
           "0%": {
-            transform: "translateX(200px)",
+            transform: "translateX(500px)",
           },
           "100%": {
             transform: "translateY(0)",
