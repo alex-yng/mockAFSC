@@ -2,6 +2,7 @@ import { useState } from "react";
 import { disableScroll } from "../App.jsx";
 import Header from "../components/Header.jsx";
 import NavLink from "../components/NavLink.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Creators() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -100,6 +101,8 @@ export default function Creators() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
