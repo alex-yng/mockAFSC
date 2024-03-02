@@ -16,7 +16,7 @@ export default function Header({ mobileNavOpen, toggleMobileNav }) {
         </div>
 
         {/* Navigation; Support for several links if needed */}
-        <nav className="space-x-4 hidden md:inline">
+        <nav className="hidden md:flex md:gap-8">
           <NavLink path="/home" text="Home" />
           <NavLink path="/about" text="About" />
           <NavLink path="/creators" text="Creators" />

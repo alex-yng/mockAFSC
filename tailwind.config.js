@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: "jit",
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
@@ -58,7 +59,7 @@ export default {
         expandUpward: {
           "0%": {
             scale: "1 1",
-            height: "100vh",
+            height: "60vh",
           },
           "100%": {
             scale: "1 0",

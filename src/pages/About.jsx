@@ -24,7 +24,7 @@ export default function About() {
       <div
         className={`bg-white w-screen absolute z-10 origin-top grid place-items-center ${
           mobileNavOpen
-            ? "h-[90vh] animate-expandDownward"
+            ? "h-[60vh] animate-expandDownward"
             : "h-0 animate-expandUpward"
         } ${opacity}`}
       >
