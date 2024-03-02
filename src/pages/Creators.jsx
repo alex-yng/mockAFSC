@@ -23,7 +23,7 @@ export default function Creators() {
       {/* Header */}
       <Header mobileNavOpen={mobileNavOpen} toggleMobileNav={toggleMobileNav} />
       <div
-        className={`bg-white w-screen absolute z-10 origin-top grid place-items-center ${
+        className={`bg-slate-100 w-screen absolute z-10 origin-top grid place-items-center shaow-xl ${
           mobileNavOpen
             ? "h-[60vh] animate-expandDownward"
             : "h-0 animate-expandUpward"
