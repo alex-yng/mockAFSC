@@ -5,9 +5,12 @@ import NavLink from "../components/NavLink.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function Creators() {
+  // Check if mobileNav is open
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  // Keep track of mobile nav opacity
   const [opacity, setOpacity] = useState("opacity-0");
 
+  // Toggle the mobile nav by inverting the state and toggle disabelScroll
   const toggleMobileNav = () => {
     setMobileNavOpen((prev) => !prev);
     disableScroll();
