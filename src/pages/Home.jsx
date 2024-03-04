@@ -39,7 +39,7 @@ export default function Home() {
     setIsLoaded(true);
   }
 
-  // On page load, fetch relevant content from JSON
+  // On page load, fetch relevant content from JSON; useEffect hook to prevent infinite rendering
   useEffect(() => {
     // content.json hosted through jsonSilo so it works on vercel production build.
     // replace URL with "/src/content.json" to test locally without public API.
@@ -121,22 +121,23 @@ export default function Home() {
                     />
                   );
                 })}
+                {/* Disclaimers */}
+                <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200 text-sm md:text-base lg:text-lg w-full md:col-span-2 lg:col-span-3">
+                  <h1 className=" text-2xl font-medium text-red-800">
+                    Disclaimers
+                  </h1>
+                  <p className="font-medium">
+                    Deadline to Register: Day before session starts
+                    <br />
+                    Additional Information: If registrations are low, class
+                    levels may be combined. No makeup lessons. Dates subject to
+                    change due to ice availability.
+                    <br />
+                    There is a 5% processing fee if you pay with your credit
+                    card.
+                  </p>
+                </div>
               </div>
-            </div>
-            {/* Disclaimers */}
-            <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200 w-11/12 mx-auto">
-              <h1 className=" text-2xl font-medium text-red-800">
-                Disclaimers
-              </h1>
-              <p className="font-medium">
-                Deadline to Register: Day before session starts
-                <br />
-                Additional Information: If registrations are low, class levels
-                may be combined. No makeup lessons. Dates subject to change due
-                to ice availability.
-                <br />
-                There is a 5% processing fee if you pay with your credit card.
-              </p>
             </div>
           </section>
 
