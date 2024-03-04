@@ -124,15 +124,20 @@ export default function Home() {
                 })}
               </div>
             </div>
+            {/* Disclaimers */}
+            <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200 w-11/12 mx-auto">
+              <h1 className=" text-2xl font-medium text-red-800">Disclaimers</h1>
+              <p className="font-medium">Deadline to Register: Day before session starts<br />
+
+                Additional Information: If registrations are low, class levels may be combined. No makeup lessons. Dates subject to change due to ice availability.<br />
+
+                There is a 5% processing fee if you pay with your credit card.</p>
+            </div>
           </section>
 
-          {/* Disclaimers */}
-          {/* create disclaimer box, ABOVE "open" and "register now" boxes, with these disclaimers:
-          Deadline to Register: Day before session starts
+          
+          
 
-          Additional Information: If registrations are low, class levels may be combined. No makeup lessons. Dates subject to change due to ice availability.
-
-          There is a 5% processing fee if you pay with your credit card.  */}
           <section className="my-8 mb-32 bg-white p-8">
             <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
               <div>
