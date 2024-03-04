@@ -12,6 +12,10 @@ Alex Young and Kaylee Maczek's CS 319 Midterm Project.
 
 Done using React.js and TailwindCSS
 
+If there are **ANY** questions related to grades, please reach out; we will get back to you ASAP.
+
+alexy@iastate.edu & kaylee53@iastate.edu
+
 <hr>
 
 **INSTALLATION**
