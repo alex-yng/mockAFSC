@@ -46,6 +46,7 @@ export default function Home() {
     // can also open the link and verify the JSON shape
     fetchData(
       "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      // "/src/data.json"
     );
   }, []);
 

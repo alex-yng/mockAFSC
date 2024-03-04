@@ -36,8 +36,8 @@ export default function About() {
     // replace URL with "/src/data.json" to test locally without public API.
     // can also open the link and verify the JSON shape
     fetchData(
-      // "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      "/src/data.json"
+      "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      // "/src/data.json"
     );
   }, []);
 
@@ -108,12 +108,12 @@ export default function About() {
        to Skate program along with the option of joining AFSC and taking their skating to higher levels of 
        skill and enjoyment.   Ames Figure Skating Club is dedicated to providing a safe, fun and supportive 
        environment for skaters of all ages and abilities to achieve their skating goals." */}
-      <div>
+      <div className="flex flex-col gap-8 lg:gap-16">
         {aboutImgs.map((img) => {
           return (
             <div
               key={Math.random() * 2178412}
-              className="bg-slate-200 mx-auto p-8 max-w-[80%] flex flex-col justify-center"
+              className="bg-slate-200 mx-auto p-8 max-w-[80%] flex flex-col justify-center rounded-xl"
             >
               <img src={img.url} alt={img.alt} />
               <p className="text-slate-800 font-extralight">{img.subtitle}</p>
