@@ -75,10 +75,10 @@ export default function Creators() {
               Maczek
             </h1>
             <p className="text-slate-300 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-              ipsam, similique dolore, optio labore praesentium ab libero
-              aliquid animi reprehenderit minima amet adipisci neque sunt natus
-              error laborum eveniet maiores!
+              I am studying at Iowa State University, with a Computer Science major and a minor in Cybersecurity Engineering.
+              I have extensive experience with HTML, Javascript, Java, CSS, React, and TailwindCSS. I am participating in leadership and 
+              research as well. 
+
             </p>
           </div>
         </div>
