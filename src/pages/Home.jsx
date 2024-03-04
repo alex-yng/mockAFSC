@@ -42,7 +42,7 @@ export default function Home() {
   // On page load, fetch relevant content from JSON; useEffect hook to prevent infinite rendering
   useEffect(() => {
     // content.json hosted through jsonSilo so it works on vercel production build.
-    // replace URL with "/src/content.json" to test locally without public API.
+    // replace URL with "/src/data.json" to test locally without public API.
     // can also open the link and verify the JSON shape
     fetchData(
       "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
