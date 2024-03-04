@@ -14,6 +14,17 @@ Done using React.js and TailwindCSS
 
 <hr>
 
+**INSTALLATION**
+<ol>
+  <li>Clone repo</li>
+  <li>Install dependencies (npm i)</li>
+  <li>npm run dev to start dev server</li>
+</ol>
+
+<hr>
+
+**GRADING**
+
 Below are the listed rubric requirements and any potentially necessary information to navigate this project.
 
 Has Midterm one HTML file named index.html ?
