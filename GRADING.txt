@@ -6,12 +6,13 @@ Has Midterm one Javascript file name index.js ?
 Because this is react, the Javascript is embedded into the jsx. The bulk of the javascript code is in Home.jsx for image loading.
 
 Has Midterm the Javascript that manages the images and their corresponding texts to generate the web pages ?
-Yes - Home.jsx lines 27-50
+Yes - Home.jsx lines ~27-50 and About.jsx lines ~112-122
 
 Has Midterm a data.json file containing the main data of images and texts ?
 Yes - path: "/src/data.json"
 
 Has Midterm at least 2 pages of images with their corresponding texts ?
+
 
 Has Midterm one page with the student information ?
 Yes - path: "/src/pages/Creators.jsx"

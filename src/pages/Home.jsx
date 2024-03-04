@@ -115,6 +115,7 @@ export default function Home() {
                   return (
                     <CourseCard
                       img={cardInfo.url}
+                      alt={cardInfo.alt}
                       title={cardInfo.title}
                       description={cardInfo.description}
                       key={Math.random() * 23178412}

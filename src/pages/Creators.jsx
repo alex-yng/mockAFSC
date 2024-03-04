@@ -62,7 +62,7 @@ export default function Creators() {
         <div className="grid place-items-center animate-[slideLeft_1.3s] p-8 sm:p-12 md:p-16 lg:p-0">
           <img
             className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none hover:scale-110 opacity-80 hover:opacity-100 lg:hover:scale-100 transition-[transform,opacity] duration-500"
-            src="/alexPFP.jpg"
+            src="/myotherimages/alexPFP.jpg"
           />
         </div>
 
@@ -75,17 +75,18 @@ export default function Creators() {
               Maczek
             </h1>
             <p className="text-slate-300 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-              I am studying at Iowa State University, with a Computer Science major and a minor in Cybersecurity Engineering.
-              I have extensive experience with HTML, Javascript, Java, CSS, React, and TailwindCSS. I am participating in leadership and 
-              research as well. 
-
+              I am studying at Iowa State University, with a Computer Science
+              major and a minor in Cybersecurity Engineering. I have extensive
+              experience with HTML, Javascript, Java, CSS, React, and
+              TailwindCSS. I am participating in leadership and research as
+              well.
             </p>
           </div>
         </div>
         <div className="grid place-items-center animate-[slideLeft_1.7s] lg:animate-[slideRight_1.5s] p-8 sm:p-12 md:p-16 lg:p-0">
           <img
             className="size-64 sm:size-80 md:size-96 lg:size-full rounded-2xl lg:rounded-none hover:scale-110 opacity-80 hover:opacity-100 lg:hover:scale-100 transition-[transform,opacity] duration-500"
-            src="/kayleePFP.jpg" 
+            src="/myotherimages/kayleePFP.jpg"
           />
         </div>
         <div className="hidden bg-slate-800 animate-[slideLeft_1.7s] lg:grid place-items-center">
@@ -96,9 +97,11 @@ export default function Creators() {
               Maczek
             </h1>
             <p className="text-slate-300 text-base sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-            I am studying at Iowa State University, with a Computer Science major and a minor in Cybersecurity Engineering.
-              I have extensive experience with HTML, Javascript, Java, CSS, React, and TailwindCSS. I am participating in leadership and 
-              research as well. 
+              I am studying at Iowa State University, with a Computer Science
+              major and a minor in Cybersecurity Engineering. I have extensive
+              experience with HTML, Javascript, Java, CSS, React, and
+              TailwindCSS. I am participating in leadership and research as
+              well.
             </p>
           </div>
         </div>

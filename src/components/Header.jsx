@@ -8,7 +8,7 @@ export default function Header({ mobileNavOpen, toggleMobileNav }) {
         {/* Div for Logo and Site Name */}
         <div className="flex items-center gap-4">
           <a href="/home">
-            <img className="size-16" src="/afscLogo.jpg" />
+            <img className="size-16" src="/myotherimages/afscLogo.jpg" />
           </a>
           <h1 className="text-slate-500 text-base sm:text-lg lg:text-2xl font-semibold tracking-wide">
             AFSC (unofficial page)

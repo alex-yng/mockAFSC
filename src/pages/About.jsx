@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { disableScroll } from "../App.jsx";
 import Header from "../components/Header.jsx";
 import NavLink from "../components/NavLink.jsx";
 
 export default function About() {
+  const [aboutImgs, setAboutImgs] = useState([]);
+
   // Check if mobileNav is open
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   // Keep track of mobile nav opacity
@@ -14,6 +16,30 @@ export default function About() {
     setMobileNavOpen((prev) => !prev);
     disableScroll();
   };
+
+  async function fetchData(url) {
+    const data = await fetch(url);
+    const res = await data.json();
+
+    let keys = Object.keys(res.aboutImgs);
+
+    let newImgs = [];
+    for (let key of keys) {
+      newImgs.push(res.aboutImgs[key]);
+    }
+
+    setAboutImgs(newImgs);
+  }
+
+  useEffect(() => {
+    // content.json hosted through jsonSilo so it works on vercel production build.
+    // replace URL with "/src/data.json" to test locally without public API.
+    // can also open the link and verify the JSON shape
+    fetchData(
+      // "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      "/src/data.json"
+    );
+  }, []);
 
   // disable dropdown menu
   setTimeout(() => {
@@ -45,28 +71,35 @@ export default function About() {
             <h1 className="text-3xl font-semibold text-slate-200 font-sans">
               About Us
             </h1>
-              <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4">
-                <p className="font-normal text-xl m-2">
-                The Ames Figure Skating Club is located at the Ames/ISU Ice Arena, 1507 Gateway Hills Park Drive
-                in Ames, Iowa. We provide skaters of all ages and abilities many opportunities through our Learn 
-                to Skate program along with the option of joining AFSC and taking their skating to higher levels of 
-                skill and enjoyment.   Ames Figure Skating Club is dedicated to providing a safe, fun and supportive 
-                environment for skaters of all ages and abilities to achieve their skating goals.
-                </p>
-              </div>
+            <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4">
+              <p className="font-normal text-xl m-2">
+                The Ames Figure Skating Club is located at the Ames/ISU Ice
+                Arena, 1507 Gateway Hills Park Drive in Ames, Iowa. We provide
+                skaters of all ages and abilities many opportunities through our
+                Learn to Skate program along with the option of joining AFSC and
+                taking their skating to higher levels of skill and enjoyment.
+                Ames Figure Skating Club is dedicated to providing a safe, fun
+                and supportive environment for skaters of all ages and abilities
+                to achieve their skating goals.
+              </p>
             </div>
+          </div>
           <div>
             <h1 className="text-3xl font-semibold text-slate-200 ml-5 font-sans">
-             Become a Member!
+              Become a Member!
             </h1>
-              <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4 ml-5">
-                <p className="font-normal text-xl m-2">
-                Becoming a member of AFSC enables a skater to participate in U.S Figure Skating events, including competitions and test 
-                sessions. Skaters can participate in all AFSC sponsored events, such as the ice show, Holiday Gala, and MORE! Members have
-                access to purchase club ice. This ice time is designated for private lessons, small group lessons, and individual practice. 
-                Lastly, you will be able to share in the sport of figure skating with others and form lifelong friendships. 
-                </p>
-              </div>
+            <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4 ml-5">
+              <p className="font-normal text-xl m-2">
+                Becoming a member of AFSC enables a skater to participate in U.S
+                Figure Skating events, including competitions and test sessions.
+                Skaters can participate in all AFSC sponsored events, such as
+                the ice show, Holiday Gala, and MORE! Members have access to
+                purchase club ice. This ice time is designated for private
+                lessons, small group lessons, and individual practice. Lastly,
+                you will be able to share in the sport of figure skating with
+                others and form lifelong friendships.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -75,6 +108,19 @@ export default function About() {
        to Skate program along with the option of joining AFSC and taking their skating to higher levels of 
        skill and enjoyment.   Ames Figure Skating Club is dedicated to providing a safe, fun and supportive 
        environment for skaters of all ages and abilities to achieve their skating goals." */}
+      <div>
+        {aboutImgs.map((img) => {
+          return (
+            <div
+              key={Math.random() * 2178412}
+              className="bg-slate-200 mx-auto p-8 max-w-[80%] flex flex-col justify-center"
+            >
+              <img src={img.url} alt={img.alt} />
+              <p className="text-slate-800 font-extralight">{img.subtitle}</p>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
