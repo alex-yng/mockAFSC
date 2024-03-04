@@ -10,7 +10,7 @@ Team 82
 
 Alex Young and Kaylee Maczek's CS 319 Midterm Project.
 
-Done using React.js and TailwindCSS
+Developed using React.js and TailwindCSS, setup with Vite, and deployed with Vercel.
 
 If there are **ANY** questions related to grades, please reach out; we will get back to you ASAP.
 
@@ -19,6 +19,7 @@ alexy@iastate.edu & kaylee53@iastate.edu
 <hr>
 
 **INSTALLATION**
+
 <ol>
   <li>Clone repo</li>
   <li>"npm i" to install dependencies</li>
@@ -63,4 +64,5 @@ Yes - header.jsx as well as javascript for mobile can be found on each page</li>
 <li>Is the Midterm published in Github ?
 
 Yes - the repo is public on Github, and the site is deployed using Vercel, easily accessible.</li>
+
 </ol>
