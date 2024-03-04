@@ -46,13 +46,13 @@ Yes - path: "/src/data.json"</li>
 
 <li>Has Midterm at least 2 pages of images with their corresponding texts ?
 
-Yes - /src/pages/Home.jsx and /src/pages/About.jsx<li>
+Yes - /src/pages/Home.jsx and /src/pages/About.jsx</li>
 
-<li>Has Midterm one page with the student information ?
+<li>Has Midterm one page with the student information?
 
 Yes - path: "/src/pages/Creators.jsx"</li>
 
-</i>Has Midterm a Navigation Bar and it functions appropriately ?
+<li>Has Midterm a Navigation Bar and it functions appropriately ?
 
 Yes - header.jsx as well as javascript for mobile can be found on each page</li>
 
