@@ -37,13 +37,11 @@ export default function Home() {
       .then((content) => {
         // Get keys of content.classImgs into array
         let keys = Object.keys(content.classImgs);
-
         // Iterate through the individual imgs of classImgs and add to new array
         let newItems = [];
         for (let key of keys) {
           newItems.push(content.classImgs[key]);
         }
-
         // Avoid rerendering by adding all new images at once
         setCardInfos(newItems);
       })
@@ -106,7 +104,7 @@ export default function Home() {
 
       {/* Check if json is fetched yet, then load the rest of the page */}
       {isLoaded && (
-        <>
+        <div>
           {/* Course Catalog */}
           <section className="container mx-auto min-h-[40rem] my-16 xl:max-w-[80rem] lg:max-w-[70rem] md:max-w-[45rem] animate-fadeIn">
             <div className="flex flex-col gap-4 lg:gap-8">
@@ -121,6 +119,7 @@ export default function Home() {
                       img={cardInfo.url}
                       title={cardInfo.title}
                       description={cardInfo.description}
+                      key={Math.random() * 23178412}
                     />
                   );
                 })}
@@ -207,7 +206,7 @@ export default function Home() {
 
           {/* Footer */}
           <Footer />
-        </>
+        </div>
       )}
     </>
   );

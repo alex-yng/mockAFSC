@@ -3,7 +3,7 @@ export default function NavLink({ path, text }) {
     <div className="group">
       <a
         href={path}
-        className="text-slate-500 hover:text-cyan-700 text-lg hover:-translate-y-2 lg:hover:text-2xl transition-all duration-300"
+        className="text-slate-500 hover:text-cyan-700 text-lg lg:group-hover:text-2xl transition-all duration-300"
       >
         {text}
       </a>
