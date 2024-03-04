@@ -17,8 +17,8 @@ Done using React.js and TailwindCSS
 **INSTALLATION**
 <ol>
   <li>Clone repo</li>
-  <li>Install dependencies (npm i)</li>
-  <li>npm run dev to start dev server</li>
+  <li>"npm i" to install dependencies</li>
+  <li>"npm run dev" to start dev server</li>
 </ol>
 
 <hr>
