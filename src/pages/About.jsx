@@ -39,7 +39,7 @@ export default function About() {
           </nav>
         )}
       </div>
-
+          
       {/* "The Ames Figure Skating Club is located at the Ames/ISU Ice Arena, 1507 Gateway Hills Park Drive
        in Ames, Iowa. We provide skaters of all ages and abilities many opportunities through our Learn 
        to Skate program along with the option of joining AFSC and taking their skating to higher levels of 
