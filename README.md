@@ -2,6 +2,8 @@
 
 Made with **_React.js_** and **_TailwindCSS_**
 
+<hr>
+
 **FOR TA'S**
 Team 82
 
