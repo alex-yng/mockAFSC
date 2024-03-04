@@ -37,7 +37,6 @@ export default function Home() {
 
     setCardInfos(newItems);
     setIsLoaded(true);
-    console.log("data loaded");
   }
 
   // On page load, fetch relevant content from JSON
@@ -126,17 +125,20 @@ export default function Home() {
             </div>
             {/* Disclaimers */}
             <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200 w-11/12 mx-auto">
-              <h1 className=" text-2xl font-medium text-red-800">Disclaimers</h1>
-              <p className="font-medium">Deadline to Register: Day before session starts<br />
-
-                Additional Information: If registrations are low, class levels may be combined. No makeup lessons. Dates subject to change due to ice availability.<br />
-
-                There is a 5% processing fee if you pay with your credit card.</p>
+              <h1 className=" text-2xl font-medium text-red-800">
+                Disclaimers
+              </h1>
+              <p className="font-medium">
+                Deadline to Register: Day before session starts
+                <br />
+                Additional Information: If registrations are low, class levels
+                may be combined. No makeup lessons. Dates subject to change due
+                to ice availability.
+                <br />
+                There is a 5% processing fee if you pay with your credit card.
+              </p>
             </div>
           </section>
-
-          
-          
 
           <section className="my-8 mb-32 bg-white p-8">
             <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
