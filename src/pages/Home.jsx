@@ -24,31 +24,30 @@ export default function Home() {
     disableScroll();
   };
 
+  async function fetchData(url) {
+    const data = await fetch(url);
+    const res = await data.json();
+
+    let keys = Object.keys(res.classImgs);
+
+    let newItems = [];
+    for (let key of keys) {
+      newItems.push(res.classImgs[key]);
+    }
+
+    setCardInfos(newItems);
+    setIsLoaded(true);
+    console.log("data loaded");
+  }
+
   // On page load, fetch relevant content from JSON
   useEffect(() => {
     // content.json hosted through jsonSilo so it works on vercel production build.
     // replace URL with "/src/content.json" to test locally without public API.
     // can also open the link and verify the JSON shape
-    fetch(
+    fetchData(
       "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      // "/src/content.json"
-    )
-      .then((response) => response.json())
-      .then((content) => {
-        // Get keys of content.classImgs into array
-        let keys = Object.keys(content.classImgs);
-        // Iterate through the individual imgs of classImgs and add to new array
-        let newItems = [];
-        for (let key of keys) {
-          newItems.push(content.classImgs[key]);
-        }
-        // Avoid rerendering by adding all new images at once
-        setCardInfos(newItems);
-      })
-      .then(() => {
-        // Allow rest of page to be loaded
-        setIsLoaded(true);
-      });
+    );
   }, []);
 
   // disable dropdown menu
