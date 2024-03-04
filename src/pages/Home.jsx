@@ -24,31 +24,29 @@ export default function Home() {
     disableScroll();
   };
 
+  async function fetchData(url) {
+    const data = await fetch(url);
+    const res = await data.json();
+
+    let keys = Object.keys(res.classImgs);
+
+    let newItems = [];
+    for (let key of keys) {
+      newItems.push(res.classImgs[key]);
+    }
+
+    setCardInfos(newItems);
+    setIsLoaded(true);
+  }
+
   // On page load, fetch relevant content from JSON
   useEffect(() => {
     // content.json hosted through jsonSilo so it works on vercel production build.
     // replace URL with "/src/content.json" to test locally without public API.
     // can also open the link and verify the JSON shape
-    fetch(
+    fetchData(
       "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      // "/src/content.json"
-    )
-      .then((response) => response.json())
-      .then((content) => {
-        // Get keys of content.classImgs into array
-        let keys = Object.keys(content.classImgs);
-        // Iterate through the individual imgs of classImgs and add to new array
-        let newItems = [];
-        for (let key of keys) {
-          newItems.push(content.classImgs[key]);
-        }
-        // Avoid rerendering by adding all new images at once
-        setCardInfos(newItems);
-      })
-      .then(() => {
-        // Allow rest of page to be loaded
-        setIsLoaded(true);
-      });
+    );
   }, []);
 
   // disable dropdown menu
@@ -127,17 +125,20 @@ export default function Home() {
             </div>
             {/* Disclaimers */}
             <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200 w-11/12 mx-auto">
-              <h1 className=" text-2xl font-medium text-red-800">Disclaimers</h1>
-              <p className="font-medium">Deadline to Register: Day before session starts<br />
-
-                Additional Information: If registrations are low, class levels may be combined. No makeup lessons. Dates subject to change due to ice availability.<br />
-
-                There is a 5% processing fee if you pay with your credit card.</p>
+              <h1 className=" text-2xl font-medium text-red-800">
+                Disclaimers
+              </h1>
+              <p className="font-medium">
+                Deadline to Register: Day before session starts
+                <br />
+                Additional Information: If registrations are low, class levels
+                may be combined. No makeup lessons. Dates subject to change due
+                to ice availability.
+                <br />
+                There is a 5% processing fee if you pay with your credit card.
+              </p>
             </div>
           </section>
-
-          
-          
 
           <section className="my-8 mb-32 bg-white p-8">
             <div className="grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 place-items-center my-8 gap-8">
