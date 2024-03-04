@@ -5,6 +5,7 @@ Made with **_React.js_** and **_TailwindCSS_**
 <hr>
 
 **FOR TA'S**
+
 Team 82
 
 Alex Young and Kaylee Maczek's CS 319 Midterm Project.
