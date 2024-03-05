@@ -103,24 +103,68 @@ export default function About() {
           </div>
         </div>
       </section>
-      {/* "The Ames Figure Skating Club is located at the Ames/ISU Ice Arena, 1507 Gateway Hills Park Drive
-       in Ames, Iowa. We provide skaters of all ages and abilities many opportunities through our Learn 
-       to Skate program along with the option of joining AFSC and taking their skating to higher levels of 
-       skill and enjoyment.   Ames Figure Skating Club is dedicated to providing a safe, fun and supportive 
-       environment for skaters of all ages and abilities to achieve their skating goals." */}
-      <div className="flex flex-col gap-8 lg:gap-16">
-        {aboutImgs.map((img) => {
-          return (
-            <div
-              key={Math.random() * 2178412}
-              className="bg-slate-200 mx-auto p-8 max-w-[80%] flex flex-col justify-center rounded-xl"
-            >
-              <img src={img.url} alt={img.alt} />
-              <p className="text-slate-800 font-extralight">{img.subtitle}</p>
-            </div>
-          );
-        })}
+      <section className="flex flex-wrap">
+  <div className="w-full lg:w-1/2">
+    <div>
+      <h1 className="text-3xl font-semibold text-slate-200 ml-5 font-sans">
+        Fall/Winter Events:
+      </h1>
+      <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4 ml-5">
+        <p className="font-normal text-xl m-2">
+          <em className=" font-semibold text-xl">​Fall Kickoff Celebration & Breakfast</em> - This event is held in the fall as a chance to kick off our new skating season. <br />
+          All club members are encouraged to attend.<br />
+          During this event, we will review ice etiquette and ice monitor responsibilities as well as review club committees.<br />
+          
+          <em className=" font-semibold text-xl">Cyclone Championship</em> | Early November<br />
+          
+          <em className=" font-semibold text-xl">Holiday Gala</em> | Mid-December - This annual event is held to honor the holiday season.
+        </p>
       </div>
+    </div>
+    <div>
+      <h1 className="text-3xl font-semibold text-slate-200 ml-5 font-sans">
+        Spring Events:
+      </h1>
+      <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4 ml-5">
+        <p className="font-normal text-xl m-2">
+          Great to Skate Event | Beginning of January - This annual event is to celebrate national skating month.
+          It is free admission and skate rental for everyone!
+          
+          Spring Show | End of April - This annual event is held in the Spring each year and is a true ice production that
+          features all of our Club Skaters as well as Learn to Skate skaters.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h1 className="text-3xl font-semibold text-slate-200 ml-5 font-sans">
+        Summer Events:
+      </h1>
+      <div className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500 bg-slate-200  mx-auto m-4 ml-5">
+        <p className="font-normal text-xl m-2">
+          Summer Camps | June & July - Summer camps offered through AFSC is a chance for skaters to continue their skating
+          pursuits during the summer season. Skating is offered for all levels and is typically in the evening with both on and
+          off-ice opportunities.
+          
+          Iowa Games | End of July - We host the annual Iowa Games competition.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:gap-16">
+    {aboutImgs.map((img) => {
+      return (
+        <div
+          key={Math.random() * 2178412}
+          className="bg-slate-200 mx-auto p-8 max-w-[80%] flex flex-col justify-center rounded-xl"
+        >
+          <img src={img.url} alt={img.alt} />
+          <p className="text-slate-800 font-extralight">{img.subtitle}</p>
+        </div>
+      );
+    })}
+  </div>
+</section>
     </>
   );
 }
