@@ -55,7 +55,11 @@ export default function Creators() {
               I am an ambitious software developer and student with experience
               in languages like Java, Python, C#, HTML/CSS/Javascript,
               technologies like React, TailwindCSS, as well as leadership roles
-              and undergraduate research. I also love 319!
+              and undergraduate research. I also love 319!<br />
+              <p className="text-xs">Class: SE/ComS319 Construction of User Interfaces, Spring 2024<br />
+              Email: alexy@iastate.edu <br />
+              Date: March 6 2024</p>
+
             </p>
           </div>
         </div>
@@ -75,11 +79,14 @@ export default function Creators() {
               Maczek
             </h1>
             <p className="text-slate-300 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-              I am studying at Iowa State University, with a Computer Science
+            I am studying at Iowa State University, with a Computer Science
               major and a minor in Cybersecurity Engineering. I have extensive
               experience with HTML, Javascript, Java, CSS, React, and
               TailwindCSS. I am participating in leadership and research as
-              well.
+              well.<br />
+              <p className="text-xs ">Class: SE/ComS319 Construction of User Interfaces, Spring 2024<br />
+              Email: kaylee53@iastate.edu <br />
+              Date: March 6 2024</p>
             </p>
           </div>
         </div>
@@ -101,7 +108,10 @@ export default function Creators() {
               major and a minor in Cybersecurity Engineering. I have extensive
               experience with HTML, Javascript, Java, CSS, React, and
               TailwindCSS. I am participating in leadership and research as
-              well.
+              well.<br />
+              <p className="text-xs ">Class: SE/ComS319 Construction of User Interfaces, Spring 2024<br />
+              Email: kaylee53@iastate.edu <br />
+              Date: March 6 2024</p>
             </p>
           </div>
         </div>
