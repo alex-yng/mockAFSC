@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { disableScroll } from "../App.jsx";
 import Header from "../components/Header.jsx";
 import NavLink from "../components/NavLink.jsx";
-import Footer from "../components/Footer.jsx";
 
 export default function About() {
   const [aboutImgs, setAboutImgs] = useState([]);
@@ -37,8 +36,8 @@ export default function About() {
     // replace URL with "/src/data.json" to test locally without public API.
     // can also open the link and verify the JSON shape
     fetchData(
-      // "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      "/src/data.json"
+      "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      // "/src/data.json"
     );
   }, []);
 
@@ -186,19 +185,19 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className=" lg:w-full flex flex-col max-w-[80%] gap-0 items-center mx-16 mt-12">
+            <div className=" lg:w-full flex flex-col max-w-[80%] space-x-28">
               {aboutImgs.map((img) => {
                 return (
                   <div
                     key={Math.random() * 2178412}
-                    className=" mx-auto  flex flex-col  place-items-center border rounded-md"
+                    className=" mx-auto m-4 ml-5 mr-10 flex flex-col  place-items-center   "
                   >
                     <img
                       src={img.url}
                       alt={img.alt}
                       className="aspect-auto w-[500px] "
                     />
-                    <p className="text-slate-200 font-extralight text-xs">
+                    <p className="text-slate-200 font-extralight">
                       {img.subtitle}
                     </p>
                   </div>
@@ -208,7 +207,11 @@ export default function About() {
           </div>
         </div>
       </section>
-      <Footer />
+      <section>
+        <h1>
+          <br />
+        </h1>
+      </section>
     </>
   );
 }
