@@ -185,19 +185,19 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className=" lg:w-full flex flex-col max-w-[80%] space-x-28">
+            <div className=" lg:w-full flex flex-col max-w-[80%] gap-0 items-center mx-16 mt-12">
               {aboutImgs.map((img) => {
                 return (
                   <div
                     key={Math.random() * 2178412}
-                    className=" mx-auto m-4 ml-5 mr-10 flex flex-col  place-items-center   "
+                    className=" mx-auto  flex flex-col  place-items-center border rounded-md"
                   >
                     <img
                       src={img.url}
                       alt={img.alt}
                       className="aspect-auto w-[500px] "
                     />
-                    <p className="text-slate-200 font-extralight">
+                    <p className="text-slate-200 font-extralight text-xs">
                       {img.subtitle}
                     </p>
                   </div>
