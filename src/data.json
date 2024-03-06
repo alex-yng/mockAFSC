@@ -39,19 +39,19 @@
   },
   "aboutImgs": {
     "img1": {
-      "url": "https://fakeimg.pl/600x400",
-      "subtitle": "Image of people having fun",
-      "alt": "Image of people having fun"
+      "url": "/holidaygala.jpg",
+      "subtitle": "Holiday Gala",
+      "alt": "Holiday Gala Image"
     },
     "img2": {
-      "url": "https://fakeimg.pl/600x400",
-      "subtitle": "Image of people having a ton of fun",
-      "alt": "Image of people having fun"
+      "url": "/spring.jpg",
+      "subtitle": "Skating in the Spring",
+      "alt": "Spring Skating"
     },
     "img3": {
-      "url": "https://fakeimg.pl/600x400",
-      "subtitle": "Image of people having the most fun",
-      "alt": "Image of people having fun"
+      "url": "/iowagames.jpg",
+      "subtitle": "Iowa Games!",
+      "alt": "Iowa Games"
     }
   }
 }
