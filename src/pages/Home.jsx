@@ -157,7 +157,7 @@ export default function Home() {
                   Open:
                 </h1>
                 <div className="min-w-96 md:min-w-[40rem] lg:min-w-[30rem] xl:min-w-[38rem] mb-8 lg:mb-16 bg-slate-200 rounded-lg shadow-lg h-96">
-                  <h1 className="font-extrabold font-serif text-center text-4xl">
+                  <h1 className=" font-bold font-sans text-center text-4xl">
                     Session 4
                   </h1>
                   <h2 className=" font-semibold font-sans text-center text-xl">
