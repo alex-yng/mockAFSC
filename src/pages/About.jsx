@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { disableScroll } from "../App.jsx";
 import Header from "../components/Header.jsx";
 import NavLink from "../components/NavLink.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function About() {
   const [aboutImgs, setAboutImgs] = useState([]);
@@ -207,11 +208,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section>
-        <h1>
-          <br />
-        </h1>
-      </section>
+      <Footer />
     </>
   );
 }
