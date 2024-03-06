@@ -36,8 +36,8 @@ export default function About() {
     // replace URL with "/src/data.json" to test locally without public API.
     // can also open the link and verify the JSON shape
     fetchData(
-      "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
-      // "/src/data.json"
+      // "https://api.jsonsilo.com/public/47e4d214-887d-4e46-9cd0-c79d2efb7b1d"
+      "/src/data.json"
     );
   }, []);
 
@@ -160,7 +160,7 @@ export default function About() {
           key={Math.random() * 2178412}
           className=" mx-auto m-4 ml-5 mr-10 flex flex-col  place-items-center   "
         >
-          <img src={img.url} alt={img.alt} />
+          <img src={img.url} alt={img.alt} className="aspect-auto w-[500px] " />
           <p className="text-slate-200 font-extralight">{img.subtitle}</p>
         </div>
       );
